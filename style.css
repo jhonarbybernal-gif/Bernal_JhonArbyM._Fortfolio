@@ -332,3 +332,16 @@ footer {
         flex-direction: column;
     }
 }
+
+/* Initial hidden state for animated elements */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease-out;
+}
+
+/* Active state when element comes into view */
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
